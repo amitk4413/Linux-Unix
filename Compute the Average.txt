@@ -1,0 +1,14 @@
+read x
+sum=0
+if [ $x -ge 1 -a $x -le 500 ]
+then
+for (( i=1; i<=$x ; i++ ))
+do
+read y
+if [ $y -ge -10000 -a $y -le 10000 ]
+then
+   sum=`expr $sum + $y`
+fi   
+done
+printf "%.3f\n" `echo "$sum / $x" | bc -l`
+fi

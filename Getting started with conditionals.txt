@@ -1,0 +1,8 @@
+read STDIN
+if [ $STDIN = 'y' -o $STDIN = 'Y' ]
+then
+echo "YES"
+elif [ $STDIN = 'n' -o $STDIN = 'N' ]
+then
+echo "NO"
+fi

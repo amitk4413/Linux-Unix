@@ -1,0 +1,15 @@
+read X
+read Y
+if [ $Y -ne 0 -a $Y -ge -100 -a $Y -le 100 -a $X -ge -100 -a $X -le 100 ]
+then
+add=`expr $X + $Y`
+sub=`expr $X - $Y`
+mul=`expr $X \* $Y`
+div=`expr $X / $Y`
+echo "$add"
+echo "$sub"
+echo "$mul"
+echo "$div"
+fi
+
+
